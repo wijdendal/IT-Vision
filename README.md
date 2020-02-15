@@ -1,8 +1,7 @@
-# JDBC-Workshop1.1
-JDBC Workshop 1.1  → CRUD JDBC ( Gestion : Apres Vente ) 
+### Velo 1.1 
+CRUD JDBC ( Gestion : Apres Vente ) 
 IT-Vision
 
-### Velo 1.1 
 
 #  Amine → Velo ( Gest. Apres Vente )   #
  
