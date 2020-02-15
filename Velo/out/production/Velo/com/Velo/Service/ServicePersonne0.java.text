@@ -1,0 +1,66 @@
+package com.Velo.Service;
+
+// SERVICE MODELE WORKING !!! 
+
+import com.Velo.Entite.Personne;
+import com.Velo.IService.IService;
+import com.Velo.Utils.DataBase;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ServicePersonne0 implements IService<Personne>{
+
+
+    private Connection con;
+    private Statement ste;
+
+    public ServicePersonne0() {
+        con = DataBase.getInstance().getConnection();
+
+    }
+
+    @Override
+    public void ajouter(Personne t) throws SQLException {
+        ste = con.createStatement();
+        String requeteInsert = "INSERT INTO `apres_vente`.personne (`id`, `nom`, `prenom`, `age`) VALUES (NULL, '" + t.getNom() + "', '" + t.getPrenom() + "', '" + t.getAge() + "');";
+        ste.executeUpdate(requeteInsert);
+    }
+    public void ajouter1(Personne p) throws SQLException
+    {
+        PreparedStatement pre = con.prepareStatement("INSERT INTO `apres_vente`.`personne` ( `nom`, `prenom`, `age`) VALUES ( ?, ?, ?);");
+        pre.setString(1, p.getNom());
+        pre.setString(2, p.getPrenom());
+        pre.setInt(3, p.getAge());
+        pre.executeUpdate();
+    }
+
+
+    @Override
+    public boolean delete(Personne t) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean update(Personne t) throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet.");
+
+    }
+
+    @Override
+    public List<Personne> readAll() throws SQLException {
+        List<Personne> arr=new ArrayList<>();
+        ste=con.createStatement();
+        ResultSet rs=ste.executeQuery("select * from personne");
+        while (rs.next()) {
+            int id=rs.getInt(1);
+            String nom=rs.getString("nom");
+            String prenom=rs.getString(3);
+            int age=rs.getInt("age");
+            Personne p=new Personne(id, nom, prenom, age);
+            arr.add(p);
+        }
+        return arr;
+    }
+}
