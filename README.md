@@ -1,5 +1,8 @@
 ### Velo 1.1 
-CRUD JDBC ( Gestion : Apres Vente ) 
+CRUD JDBC ( Gestion : Apres Vente )  + Java mail 
+
+
+
 IT-Vision
 
 
