@@ -1,6 +1,9 @@
 package com.Velo.Entite;
 
 public class Personne {
+
+    //Personne/Deliveryman?  : id + nom + prenom + age
+
     private int id;
     private String nom;
     private String prenom;
@@ -53,7 +56,7 @@ public class Personne {
 
     @Override
     public String toString() {
-        return "Personne{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", age=" + age + '}';
+        return "Personne{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", age=" + age + '}' + "\n";
     }
 
 }

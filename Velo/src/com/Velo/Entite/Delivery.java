@@ -1,61 +1,63 @@
 package com.Velo.Entite;
 
 public class Delivery {
-    //  idDelivery  + IdClient  + IdBike
-    private int IdDelivery;
-    private int IdClient;
-    private int IdBike;
-    private String Description;
+    //  Delivery : idDelivery  + idClient  + idBike
 
-    public Delivery(int idDelivery, int idClient, int idBike, String description) {
-        this.IdDelivery = idDelivery;
-        this.IdClient = idClient;
-        this.IdBike = idBike;
-        this.Description = description;
-    }
+    private int idDelivery;
+    private int idClient;
+    private int idBike;
+    private String description;
 
     public Delivery() {
     }
 
+    public Delivery(int idDelivery, int idClient, int idBike, String description) {
+        this.idDelivery = idDelivery;
+        this.idClient = idClient;
+        this.idBike = idBike;
+        this.description = description;
+    }
+
     public int getIdDelivery() {
-        return IdDelivery;
+        return idDelivery;
     }
 
     public void setIdDelivery(int idDelivery) {
-        IdDelivery = idDelivery;
+        this.idDelivery = idDelivery;
     }
 
     public int getIdClient() {
-        return IdClient;
+        return idClient;
     }
 
     public void setIdClient(int idClient) {
-        IdClient = idClient;
+        this.idClient = idClient;
     }
 
     public int getIdBike() {
-        return IdBike;
+        return idBike;
     }
 
     public void setIdBike(int idBike) {
-        IdBike = idBike;
+        this.idBike = idBike;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     @Override
     public String toString() {
         return "Delivery{" +
-                "IdDelivery=" + IdDelivery +
-                ", IdClient=" + IdClient +
-                ", IdBike=" + IdBike +
-                ", Description='" + Description + '\'' +
-                '}';
+                "idDelivery=" + idDelivery +
+                ", idClient=" + idClient +
+                ", idBike=" + idBike +
+                ", description='" + description + '\'' +
+                '}'+"\n";
     }
 }
+

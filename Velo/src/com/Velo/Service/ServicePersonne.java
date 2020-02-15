@@ -23,32 +23,32 @@ public class ServicePersonne implements IService<Personne>{
     }
 
     @Override
-    public void ajouter(Personne t) throws SQLException {
+    public void ajouter1(Personne t) throws SQLException {
         ste = con.createStatement();
         String requeteInsert = "INSERT INTO `apres_vente`.personne (`id`, `nom`, `prenom`, `age`) VALUES (NULL, '" + t.getNom() + "', '" + t.getPrenom() + "', '" + t.getAge() + "');";
         ste.executeUpdate(requeteInsert);
+        System.out.println("Added successfully by ajouter1");
     }
-    public void ajouter1(Personne p) throws SQLException
+    public void ajouter(Personne p) throws SQLException
     {
         PreparedStatement pre = con.prepareStatement("INSERT INTO `apres_vente`.`personne` ( `nom`, `prenom`, `age`) VALUES ( ?, ?, ?);");
         pre.setString(1, p.getNom());
         pre.setString(2, p.getPrenom());
         pre.setInt(3, p.getAge());
         pre.executeUpdate();
+        System.out.println("Added successfully by ajouter()");
     }
 
     public void updateDB(String nom, String prenom, int age, int id) throws SQLException {
 
         String query = "UPDATE `apres_vente`.`personne` SET nom = ?, prenom = ?, age = ? "
                 + " where id = ? ";
-
-        try {
-
+       try {
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.setString(1, nom);
             preparedStatement.setString(2, prenom);
-            preparedStatement.setInt(5, age);
-            preparedStatement.setInt(6, id);
+            preparedStatement.setInt(3, age);
+            preparedStatement.setInt(4, id);
             preparedStatement.executeUpdate();
             preparedStatement.close();
 
@@ -91,28 +91,3 @@ public class ServicePersonne implements IService<Personne>{
         }
     }
 
-
-
-/*
-
- @Override
- public boolean update(Personne t) throws SQLException {
-
- String update = "UPDATE `apres_vente`.`personne` SET nom = ? " +
- " WHERE LTRIM(RTRIM(order_id)) = ?";
- try {
-
- getConnection().setAutoCommit(false); //Added
- PreparedStatement pStmnt = getConn().prepareStatement(update);
- pStmnt.setString(1, orderId);
- results = pStmnt.executeUpdate();}
-
- if (results > 0) {
- added = true;
- getConn().commit(); //Added
- getConn().setAutoCommit(true); //Added
- }
-
-
-
-*/

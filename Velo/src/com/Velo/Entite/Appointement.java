@@ -1,32 +1,35 @@
 package com.Velo.Entite;
-
+// import java.util.Date;
+// import java.sql.Date;
 
 public class Appointement {
-    //Date + Description
+    //Appointement : idAppointement + date + description
 
-    // mysql ? java ?  DateFormat ?
-    // java.util.Date
-    // java.sql.Date
-
-    private int idAppointement;
+    private int idappointement;
     private String date;
-    private String Description;
+    private String description;
 
-    public Appointement() {
+    public Appointement(String idappointement, String date, String description) {
     }
 
-    public Appointement(String date, String description,int idAppointement) {
+    public Appointement(int idappointement, String date, String description) {
+        this.idappointement = idappointement;
         this.date = date;
-        this.Description = description;
-        this.idAppointement= idAppointement;
+        this.description = description;
+    }
+
+
+    public Appointement(String date, String description) {
+        this.date = date;
+        this.description = description;
     }
 
     public int getIdAppointement() {
-        return idAppointement;
+        return idappointement;
     }
 
-    public void setIdAppointement(int idAppointement) {
-        this.idAppointement = idAppointement;
+    public void setIdAppointement(int idappointement) {
+        this.idappointement = idappointement;
     }
 
     public String getDate() {
@@ -38,22 +41,39 @@ public class Appointement {
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
+    //java output
     @Override
     public String toString() {
-        return "Appointement{" +
-                "idAppointement=" + idAppointement +
-                ", date='" + date + '\'' +
-                ", Description='" + Description + '\'' +
-                '}';
+        return "              " +
+                "{" +
+                "" + idappointement +
+                ", '" + date + '\'' +
+                ", '" + description + '\'' +
+                '}' + "\n";
     }
+
 }
+
+
+
+
+/*
+@Override
+public String toString() {
+        return "Appointement{" +
+                "idappointement=" + idappointement +
+                ", date='" + date + '\'' +
+                ", description='" + description + '\'' +
+                '}' + "\n" ; }
+*/
+
 
 
 

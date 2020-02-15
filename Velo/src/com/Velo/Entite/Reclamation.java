@@ -1,17 +1,16 @@
 package com.Velo.Entite;
 
 public class Reclamation {
-
-//  IdReclamation  +  Description  + [TypeRecommandation later ? ]
+    //  Reclamation : IdReclamation  +  Description  + [ TypeRecommandation if needed ? ]
 
     private int IdReclamation;
-    private String Description;
+    private String description;
 
     public Reclamation(int idReclamation, String description) {
         this.IdReclamation = idReclamation;
-        this.Description = description;
+        this.description = description;
     }
-        /**********         **********/
+
     public Reclamation() {
     }
 
@@ -24,18 +23,18 @@ public class Reclamation {
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        description = description;
     }
 
     @Override
     public String toString() {
         return "Reclamation{" +
                 "IdReclamation=" + IdReclamation +
-                ", Description='" + Description + '\'' +
-                '}';
+                ", Description='" + description + '\'' +
+                '}' + "\n" ;
     }
 }

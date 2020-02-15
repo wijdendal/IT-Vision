@@ -19,7 +19,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/javax.mail.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/esprit/ESPRIT 2nd/PI DEV/javax.mail.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

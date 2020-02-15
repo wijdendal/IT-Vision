@@ -1,6 +1,6 @@
 package com.Velo.IService;
 
-import com.Velo.Entite.Personne;
+//import com.Velo.Entite.Personne;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,8 +16,7 @@ public interface IService<T> {
 
 
 
-    //void updateDB(Personne t, int idupdate) throws SQLException;
-    //boolean update(T t, int results, boolean added) throws SQLException;
+
 
 
 }

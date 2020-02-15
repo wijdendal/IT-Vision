@@ -1,7 +1,7 @@
 package com.Velo.Entite;
 
 public class Repair {
-    // IdRepair + IdBike + [Schedule : Repair Status]
+    // Repair : IdRepair + IdBike + [Schedule? : Repair Status ???]
 
     private int IdRepair;
     private int IdBike;
@@ -11,7 +11,7 @@ public class Repair {
         this.IdRepair = idRepair;
         this.IdBike = idBike;
     }
-        /************         ***********/
+
     public Repair() {
     }
 
@@ -36,6 +36,6 @@ public class Repair {
         return "Repair{" +
                 "IdRepair=" + IdRepair +
                 ", IdBike=" + IdBike +
-                '}';
+                '}' + "\n";
     }
 }
