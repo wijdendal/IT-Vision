@@ -10,19 +10,4 @@ IT-Vision
  
  
 
-DBname : apres_vente
-
-DB tables :
-
-| personne/user↑ | appointement   | delivery    | reclamation   | repair   |
-|----------------|----------------|-------------|---------------|----------|
-| id             | idappointement | IdDelivery  | IdReclamation | IdRepair |
-| nom            | date           | IdClient    | description   | IdBike   |
-| prenom         | description    | IdBike      |               |          |
-| age            |                | description |               |          |
-
-
-
-user : Personne →  + phoneNumber.
-
 
