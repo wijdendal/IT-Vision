@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.TestController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="150.0" style="-fx-background-color: #292F35;">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #2BBFBD;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" smooth="false" translateX="-10.0">
+                     <image>
+                        <Image url="@logo-bascla.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <FontAwesomeIcon fill="#575454" iconName="BICYCLE"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="WRENCH"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="FLAG"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="GROUP"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="COMMENT"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="ANGELLIST" layoutX="48.0" layoutY="377.0" size="2em" translateY="60.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="110.0" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <FontAwesomeIcon fill="#575454" iconName="FLAG" size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="SHARE" size="2em" text="" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox style="-fx-background-color: #eee;" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIcon glyphStyle="-fx-fill:#999" iconName="SEARCH" size="1.5em" />
+                  <JFXTextField focusColor="#2bbfbd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" promptText="Search Places" unFocusColor="#999999">
+                     <font>
+                        <Font name="Candara" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <ImageView fitHeight="200.0" fitWidth="1100.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/background_img.jpg" />
+               </image>
+            </ImageView>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  
+                  <VBox alignment="CENTER" layoutX="835.0" layoutY="10.0" prefHeight="200.0" prefWidth="275.0">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: #fff;" VBox.vgrow="NEVER">
+                         
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="560.0" layoutY="10.0" prefHeight="380.0" prefWidth="226.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@images/user_img.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Admin User" textFill="#999999">
+                                 <font>
+                                    <Font name="Calibri Light" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="10.0">
+                           
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                      
+                       
+                       
+                        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="110.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@images/user_img.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Jack" textFill="#999999">
+                                 <font>
+                                    <Font name="Calibri Light" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online-dot">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

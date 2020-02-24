@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.TestController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="150.0" style="-fx-background-color: #292F35;">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #2BBFBD;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" smooth="false" translateX="-10.0">
+                     <image>
+                        <Image url="@../../../work/logo-bascla.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <FontAwesomeIcon fill="#575454" iconName="BICYCLE"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="WRENCH"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="FLAG"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="GROUP"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="COMMENT"  size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="ANGELLIST" layoutX="48.0" layoutY="377.0" size="2em" translateY="60.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="110.0" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <FontAwesomeIcon fill="#575454" iconName="FLAG" size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="SHARE" size="2em" text="" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox style="-fx-background-color: #eee;" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIcon glyphStyle="-fx-fillb#eee" iconName="SEARCH" size="1.8em" text="" translateY="-10.0" />
+                 
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Documents/0008.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" top="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="TOP_RIGHT" text="User / Admin ./ USER" textFill="#aba6a6">
+                           <font>
+                              <Font name="Calibri Light" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" top="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <FontAwesomeIcon fill="#c2b5b5" glyphStyle="-fx-fill #eee" iconName="STREETVIEW" size="1.8em" text="">
+                           <HBox.margin>
+                              <Insets right="10.0" top="30.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</HBox>
