@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ProgressBar?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.sun.javafx.css.parser.CSSParser?>
+<?import java.net.URL?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AdminEventController">
+    <stylesheets>
+        <URL value="@CSS/stylesheet.css" />
+    </stylesheets>
+    <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="150.0" style="-fx-background-color: #292F35;">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #2BBFBD;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" smooth="false" translateX="-10.0">
+                     <image>
+                        <Image url="@logo-bascla.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <FontAwesomeIcon fill="#575454" iconName="BICYCLE" size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #0000;" textFill="TRANSPARENT" />
+                  <FontAwesomeIcon fill="#575454" iconName="WRENCH" size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <Button fx:id="amine" layoutX="58.0" layoutY="80.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" style="-fx-background-color: #0000;" textFill="TRANSPARENT" />
+                  <FontAwesomeIcon fill="#575454" iconName="FLAG" size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <Button fx:id="me" layoutX="57.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" style="-fx-background-color: #0000;" textFill="TRANSPARENT" />
+                  <FontAwesomeIcon fill="#575454" iconName="GROUP" size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <Button fx:id="Blog" layoutX="57.0" layoutY="255.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" style="-fx-background-color: #0000;" textFill="TRANSPARENT" />
+                  <FontAwesomeIcon fill="#575454" iconName="COMMENT" size="2em" translateY="20.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#575454" iconName="ANGELLIST" layoutX="48.0" layoutY="377.0" size="2em" translateY="60.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+                  <Button fx:id="Charity" layoutX="57.0" layoutY="433.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="56.0" style="-fx-background-color: #0000;" textFill="TRANSPARENT" translateY="35.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="756.0" prefWidth="1166.0" style="-fx-background-color: #;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="868.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@0008.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="95.0" layoutY="63.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" />
+                  <FontAwesomeIcon fill="#b1a7a7" glyphStyle="-fx-fillb#eee" iconName="GLOBE" layoutX="46.0" layoutY="84.0" size="1.8em" text="" />
+                 
+                  <Label layoutX="718.0" layoutY="71.0" prefHeight="59.0" prefWidth="366.0" text="Admin ou user" textFill="#c3baba" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  
+                       
+<!--                  <Button fx:id="weekly" layoutX="631.0" layoutY="98.0" minHeight="18.0" minWidth="50.0" mnemonicParsing="false" onAction="#weekly" prefHeight="18.0" prefWidth="50.0" />-->
+               </children>
+            </AnchorPane>
+      
+            <JFXButton fx:id ="weekly"  onAction="#weekly" layoutX="450.0" layoutY="630.0" mnemonicParsing="false"  prefHeight="55.0" prefWidth="150.0"  buttonType="RAISED"  ripplerFill="#57c5f1" styleClass="weekly" stylesheets="@CSS/stylesheet.css" text="weekly">
+<font>
+               <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@lg2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                          </JFXButton>
+         
+                          <JFXButton  onAction="#update" layoutX="350.0" layoutY="510.0" mnemonicParsing="false"  prefHeight="33.0" prefWidth="120.0"  buttonType="RAISED"  ripplerFill="#57c5f1" styleClass="blue-btn" stylesheets="@CSS/stylesheet.css" text="Update">
+<font>
+               <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@lg2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                          </JFXButton>
+         
+                          <JFXButton  onAction="#ok" layoutX="499.0" layoutY="512.0" mnemonicParsing="false"  prefHeight="33.0" prefWidth="95.0" buttonType="RAISED" ripplerFill="#57c5f1" styleClass="blue-btn" stylesheets="@CSS/styles.css" text="Set">
+<font>
+               <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@lg2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+<!--            <Button layoutX="499.0" layoutY="512.0" mnemonicParsing="false" onAction="#ok" prefHeight="33.0" prefWidth="95.0" text="Set" />
+            <Button layoutX="389.0" layoutY="510.0" mnemonicParsing="false" onAction="#update" prefHeight="33.0" prefWidth="95.0" text="         Update" />-->
+            <JFXTextField fx:id="Rechercher" alignment="TOP_LEFT" layoutX="410.0" layoutY="164.0" maxWidth="457.0" minWidth="457.0" onAction="#Rechercher" prefHeight="33.0" prefWidth="457.0" promptText="Rechercher" focusColor="#57c5f1" labelFloat="true"  unFocusColor="#8a8585">
+   <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                  </JFXTextField>
+<!--            <TextField fx:id="Rechercher" alignment="TOP_LEFT" layoutX="410.0" layoutY="164.0" maxWidth="457.0" minWidth="457.0" onAction="#Rechercher" prefHeight="33.0" prefWidth="457.0" promptText="Rechercher" style="-fx-border none: #0000000;" />-->
+            <TableView fx:id="table" styleClass ="table" layoutX="388.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="709.0" stylesheets = "CSS/stylesheet.css">
+              <columns>
+                <TableColumn fx:id="id" minWidth="0.0" prefWidth="6.0" text="id" />
+                  <TableColumn fx:id="titre" minWidth="0.0" prefWidth="104.0" text="titre" />
+                  <TableColumn fx:id="date" minWidth="0.0" prefWidth="90.0" text="date" />
+                  <TableColumn fx:id="type" prefWidth="102.0" text="Type" />
+                  <TableColumn fx:id="titre1" prefWidth="134.0" text="Description" />
+                  <TableColumn fx:id="lieu1" prefWidth="71.0" text="lieu" />
+                  <TableColumn fx:id="pic" prefWidth="86.0" text="pic" />
+                  <TableColumn fx:id="etat" minWidth="0.0" prefWidth="58.0" text="etat" />
+                  <TableColumn fx:id="capa" minWidth="0.0" prefWidth="168.0" text="capacite" />
+                    <TableColumn fx:id="h1" minWidth="0.0" prefWidth="58.0" text="h1" />
+                  <TableColumn fx:id="h2" minWidth="0.0" prefWidth="168.0" text="h2" />
+              </columns>
+            </TableView>
+<!--                      <TextField fx:id="title" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="171.0" promptText="Title" translateY="30.0">
+               <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="description" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="176.0" promptText="Description" translateY="30.0">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="ou" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="182.0" promptText="lieu" translateY="30.0">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin></TextField>
+                 -->
+            <VBox translateX="100.0" translateY="280.0" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color:">
+                 <JFXTextField fx:id="title" focusColor="#57c5f1" labelFloat="true" maxWidth="200.0" minWidth="200.0" prefHeight="47.0" prefWidth="200.0" promptText="Name of your event " unFocusColor="#8a8585">
+   <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                  </JFXTextField>
+                          <JFXTextField fx:id="description" focusColor="#57c5f1" labelFloat="true" maxWidth="200.0" minWidth="200.0" prefHeight="47.0" prefWidth="200.0" promptText="Describe it" unFocusColor="#8a8585">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                  </JFXTextField>
+                          <JFXTextField fx:id="ou" focusColor="#57c5f1" labelFloat="true" maxWidth="200.0" minWidth="200.0" prefHeight="47.0" prefWidth="200.0" promptText="WHERE?" unFocusColor="#8a8585">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                  </JFXTextField>
+
+<!--                  <JFXTextField fx:id="ou" focusColor="#57c5f1" labelFloat="true" maxWidth="457.0" minWidth="457.0" prefHeight="47.0" prefWidth="457.0" promptText="Where it is going to happen ? "unFocusColor="#8a8585">
+   <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXTextField>-->
+                        <JFXDatePicker fx:id="date1" maxWidth="457.0" minWidth="200.0" prefHeight="47.0" prefWidth="200.0"  >
+               <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                              <JFXComboBox fx:id="combo" maxWidth="457.0" minWidth="200.0" prefHeight="47.0" prefWidth="150.0" >
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <HBox   translateX="80.0" translateY="40.0" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="350.0" >
+                              <JFXButton fx:id="ajouter" onAction="#ajouter" buttonType="RAISED" layoutX="249.0" layoutY="457.0"  prefHeight="45.0" prefWidth="150.0" ripplerFill="#57c5f1" styleClass="blue-btn" stylesheets="@CSS/stylesheet.css" text="ajouter">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/lg2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+                          <JFXButton fx:id="img" onAction="#upload_1" buttonType="RAISED" layoutX="249.0" layoutY="457.0"  prefHeight="45.0" prefWidth="150.0" ripplerFill="#57c5f1" styleClass="blue-btn" stylesheets="@CSS/stylesheet.css" text="Upload">
+<font>
+               <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@lg2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>          
+            <Label fx:id="imgl" layoutX="255.0" layoutY="647.0" prefHeight="72.0" prefWidth="106.0" />
+                  <ProgressBar fx:id="pb" layoutX="189.0" layoutY="257.0" />
+
+
+                              </HBox>
+            </VBox>
+<!--                        <Button fx:id="img" alignment="TOP_CENTER" minWidth="40.0" mnemonicParsing="false" onAction="#upload_1" prefHeight="85.0" prefWidth="87.0" style="-fx-background-color: #0000;" translateY="50.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="IMAGE" size="3em" wrappingWidth="43.30000019073486" />
+                                 </graphic>
+                              </Button>
+            <Button layoutX="609.0" layoutY="506.0" minWidth="50.0" mnemonicParsing="false" onAction="#supprimerF" prefHeight="46.0" prefWidth="50.0" style="-fx-background-color: #0000;" />
+                      <Button fx:id="ajouter" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#ajouter" prefHeight="49.0" prefWidth="54.0" style="-fx-background-color: #0000;" text="Ajouter event" translateY="50.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="PLUS" size="3EM" translateY="-50.0" />
+                                 </graphic>
+                      </Button>-->
+            <FontAwesomeIcon fontSmoothingType="LCD" iconName="TRASH" layoutX="620.0" layoutY="537.0" size="3em" wrappingWidth="78.30000019073486" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
