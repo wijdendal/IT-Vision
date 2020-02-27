@@ -3,7 +3,7 @@ JavaFx Application ( Gestion : Apres Vente )  + Java mail + Notification API + P
 IT-Vision
 
 
-VeloFx2_Repo: or <https://drive.google.com/open?id=18xqTVR2ir1U04wW5BUttJdBkZMD9zwau>
+VeloFx2_Repo:<https://drive.google.com/open?id=18xqTVR2ir1U04wW5BUttJdBkZMD9zwau>
 
 
 
